@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta name="description" content="This is a login page">
+    <meta name="author" content="Lakshay Gupta">
+    <meta name="keywords" content="Marvel Studios ,Ironman ,Captain Marvel ,thor">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+    <link rel="stylesheet" href="./css/login1.css">
+  </head>
+  <body id="base">
+    <video id="myVideo">
+  <source src="Iron Man Vs Thanos - Final Battle Scene.mp4" type="video/mp4" >
+  Your browser does not support HTML5 video.
+</video>
+
+    <div class="header">
+      <p id="ms">M<img src="Avengers-End.png" alt="Image Unavailable" id="logo">RVEL STUDIOS</p>
+
+    </div>
+  <section id="loginblock">
+    <div id="avengers" class="common">
+      <img src="avengers.png" alt="Image Unavailable" onclick="playAudio()">
+    </div>
+    <div id="block" class="common">
+      <h2>Sign In</h2>
+      <form class="SIform" action="index.html" method="post" >
+        <input name="Username" type="name" placeholder="Your Superhero Name" class="login">
+        <br><input name="Password" type="password" placeholder="Password" class="login">
+        <br><button type="button" name="signin" class="login" id="log">Login</button>
+        <br><p id="nam">Not a Member?<a href="#" onclick="OpenForm()">Register Now</a></p>
+      </form>
+    </div>
+  </section>
+
+  <div class="outerPopup" id="outerpop">
+      <div class="formPopup">
+        <div class="popup_img">
+          <img src="dolby-thor.jpg" alt="Image Unavailable" width="100%" height="100%">
+        </div>
+        <form class="SIform" action="index.html" method="post" id="popform">
+          <img src="img_56359.png" alt="Image Unavailable" id="close" onclick="CloseForm()">
+          <input name="Username" type="name" placeholder="Your Superhero Name" class="login">
+          <br><input name="Email" type="email" placeholder="E-mail" class="login">
+          <br><input name="Password" type="password" placeholder="Password" class="login">
+          <br><input name="Password" type="password" placeholder="Confirm Password" class="login">
+          <br><button type="button" name="signin" class="login" id="log">Register</button>
+        </form>
+        </div>
+  </div>
+  <!-- <audio src="Marvel Studios.mp3" id="themesong">
+
+  </audio> -->
+
+  <footer class="pg_end" ></footer>
+  <script>
+    function OpenForm(){
+       document.getElementById('outerpop').style.display='block';
+    }
+    function CloseForm(){
+       document.getElementById('outerpop').style.display='none';
+    }
+    function playAudio(){
+      // document.getElementById('themesong').play() &&
+       document.getElementById('myVideo').play();
+      document.getElementById('myVideo').style.display='block';
+      // document.getElementById('block').style.display='none';
+
+    }
+    // onPlayerEnded: function(){ document.getElementById('myVideo').style.display='none';}
+
+
+  </script>
+
+  </body>
+</html>
