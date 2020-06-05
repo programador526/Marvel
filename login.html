@@ -65,6 +65,9 @@
       // document.getElementById('themesong').play() &&
        document.getElementById('myVideo').play();
       document.getElementById('myVideo').style.display='block';
+      document.getElementById('myVideo').onended = function(){
+        document.getElementById('myVideo').style.display='none';
+      }
       // document.getElementById('block').style.display='none';
 
     }
