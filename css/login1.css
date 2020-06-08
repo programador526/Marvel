@@ -39,21 +39,21 @@
 
 }
 #avengers img{
-  height: 230px;
-   margin: 100px;
+  width: 70%;
+   margin: 10%;
    transition: all 0.5s;
    cursor: pointer;
    z-index: 999999;
   /* margin-top: 150px;  */
 }
 #avengers img:hover{
-  height: 250px;
-  margin: 76px;
+  width: 80%;
+  margin: 7.4%;
 }
 .login{
   padding: 15px;
   margin: 15px;
-  width: 200px;
+  width: 77%;
   border-radius: 10px;
   border: 0px;
   background-color: #ccccff;
@@ -69,9 +69,8 @@
   text-align :center;
   box-shadow: 16px 24px 20px;
   border: 0px;
-  margin-left: 40px;
-  height: 320px;
-  margin-top: 40px;
+  width: 20%;
+  margin: 2%;
   opacity: 0.8;
 }
 #block h2{
